@@ -34,9 +34,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
         Tweet tweet = tweets.get(position);
-
         holder.bind(tweet);
     }
 
@@ -44,7 +42,6 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     public int getItemCount() {
         return tweets.size();
     }
-
     public void clear(){
         tweets.clear();
         notifyDataSetChanged();
